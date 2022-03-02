@@ -2,70 +2,153 @@
     <html language="en">
         
         <head>
-            <title>Feedback Delivery!</title>
+            <title>Planet Express</title>
         </head>
     
         <body>
         <header>
             <div>
                 <h1>Planet Express Survey</h1>
-                <p>Thank you for your feedback!</p>
+                <p>Let us know how we're doing!</p>
             </div>
         </header>
       
         <form>
             <div>
-                <label>Email address</label>
-                <input type="email" 
-                        placeholder="Enter your email"
-                        name="email">
+                <label>Email address
+                    <input type="email" 
+                            placeholder="Enter your email"
+                            name="email">
+                </label>
             </div>
 
             <div>
-                <label>Name</label>
-                <input type="text"
-                        placeholder="Enter your name"
-                        name="name">
+                <label>Name
+                    <input type="text"
+                            placeholder="Enter your name"
+                            name="name">
+                </label>
             </div>
         
             <div>
-                <label>How old are you? (optional)</label>
-                <input type="number"
-                        placeholder="Age"
-                        name="age">
+                <label>How old are you? (optional)
+                    <input type="number"
+                            placeholder="Age"
+                            name="age"
+                            min="10">
+                </label>
             </div>
 
             <div>
-                <lable>How long have you been using our services?</lable><br />
-                <input type="text"
-                        placeholder="Example: 6 months"
-                        name="duration-of-use">                       
+                <lable>How long have you been using our services?<br>
+                    <input type="text"
+                            placeholder="e.g. 6 months"
+                            name="duration-of-use">
+                </lable>                       
             </div>
 
             <div>
-                <p>Which alternatives did you consider before choosing <br /> our services? 
-                    <span>(Choose all that apply)</span></p>
+                <label>If there was one new feature you could suggest, <br> what would it be? <br>
+                    <input type="text"
+                            placeholder="e.g. Lobby Slurm machine?"
+                            name="new">
+                </label>
+            </div>
+
+            <div>
                 <label>
-                    <input type="checkbox"> UPS
-                    <input type="checkbox"> Moms
-                    <br />
-                    <input type="checkbox"> Fedex
-                    <input type="checkbox"> Lynden
-                    <br />
-                    <input type="checkbox"> Space X
-                    <input type="checkbox"> Carlile
+                    How likely are you to recommend Planet Express to a friend?<br>
+                    <select name="sample filler question">
+                        <option disable selected value>Select an option</option>
+                        <option value="answer1">Never</option>
+                        <option value="answer2">Probably not</option>
+                        <option value="answer3">Maybe</option>
+                        <option value="answer4">I think I would</option>
+                        <option value="answer5">Definitly will</option>
+                    </select>
+                </label>
+            </div>
+
+            <div>
+                <p>Which alternatives did you consider before choosing <br> our services? 
+                    <span>(Choose all that apply)</span></p>
+                
+                <label>
+                    <input type="checkbox"
+                            name="alts"> UPS 
+                </label>
+
+                <label>
+                    <input type="checkbox"
+                            name="alts"> Moms
+                </label>
+
+                    <br>
+             
+                <label>
+                    <input type="checkbox"
+                            name="alts"> Fedex
+                </label>
+
+                <label>
+                    <input type="checkbox"
+                            name="alts"> Lynden
+                </label>
+                
+                    <br>
+                
+                <label>
+                    <input type="checkbox"
+                            name="alts"> Space X
+                </label>
+
+                <label>
+                    <input type="checkbox"
+                            name="alts"> Carlile
+                </label>
+
+                    <br>
+
+                <label>
+                    <input type="checkbox"
+                            name="alts"> Other
                 </label>
             </div>
 
             <!--css display: inline block to get rid of breaks for options?-->
             <div>
-                <p>On a scale of 1 to 5, how were you <br /> treated by our staff?</p>
+                <p>On a scale of 1 to 5, how were you <br> treated by our staff?</p>
+                
                 <label>
-                    <input type="radio"> 1 (Bender "helped" you by taking your wallet)<br />
-                    <input type="radio"> 2 (Zoidberg ate your sandwich...)<br />
-                    <input type="radio"> 3 (Fry tried to help, but it didn't help)<br />
-                    <input type="radio"> 4 (Leela delivered your goods...while verbally judging you)<br />
-                    <input type="radio"> 5 (Hermes delivered your goods AND did your taxes)<br />
+                    <input type="radio"
+                            name="satisfaction"> 1 (Bender "helped" you by taking your wallet)<br>
+                </label>
+                
+                <label>
+                    <input type="radio"
+                            name="satisfaction"> 2 (Zoidberg ate your sandwich...)<br>
+                </label>
+                
+                <label>
+                    <input type="radio"
+                            name="satisfaction"> 3 (Fry tried to help, but it didn't help)<br>
+                </label>
+
+                <label>
+                    <input type="radio"
+                            name="satisfaction"> 4 (Leela delivered your goods...while verbally judging you)<br>
+                </label>
+
+                <label>
+                    <input type="radio"
+                            name="satisfaction"> 5 (Hermes delivered your goods AND did your taxes)<br><br>
+                </label>
+            </div>
+
+            <div>
+                <label>
+                    Tell us about your experience or leave a suggestion!<br>
+                    <textarea placeholder="...Wanna destroy all humans?"></textarea>
                 </label>
             </div>
         
