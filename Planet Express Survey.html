@@ -3,9 +3,10 @@
         
         <head>
             <title>Planet Express</title>
+            <link rel="stylesheet" href="Planet Express styles.css">
         </head>
     
-        <body>
+        <body class="body">
         <header>
             <div>
                 <h1>Planet Express Survey</h1>
@@ -18,7 +19,8 @@
                 <label>Email address
                     <input type="email" 
                             placeholder="Enter your email"
-                            name="email">
+                            name="email"
+                            required>
                 </label>
             </div>
 
@@ -26,12 +28,13 @@
                 <label>Name
                     <input type="text"
                             placeholder="Enter your name"
-                            name="name">
+                            name="name"
+                            required>
                 </label>
             </div>
         
             <div>
-                <label>How old are you? (optional)
+                <label>How old are you? <span>(optional)</span>
                     <input type="number"
                             placeholder="Age"
                             name="age"
@@ -43,7 +46,8 @@
                 <lable>How long have you been using our services?<br>
                     <input type="text"
                             placeholder="e.g. 6 months"
-                            name="duration-of-use">
+                            name="duration-of-use"
+                            required>
                 </lable>                       
             </div>
 
@@ -58,13 +62,13 @@
             <div>
                 <label>
                     How likely are you to recommend Planet Express to a friend?<br>
-                    <select name="sample filler question">
+                    <select name="recommendation" required>
                         <option disable selected value>Select an option</option>
-                        <option value="answer1">Never</option>
-                        <option value="answer2">Probably not</option>
-                        <option value="answer3">Maybe</option>
-                        <option value="answer4">I think I would</option>
-                        <option value="answer5">Definitly will</option>
+                        <option value="Never">Never</option>
+                        <option value="Probably not">Probably not</option>
+                        <option value="Maybe">Maybe</option>
+                        <option value="Would">I think I would</option>
+                        <option value="Will">Definitly will</option>
                     </select>
                 </label>
             </div>
@@ -75,23 +79,27 @@
                 
                 <label>
                     <input type="checkbox"
+                            value="UPS"
                             name="alts"> UPS 
                 </label>
 
                 <label>
                     <input type="checkbox"
+                            value="Moms"
                             name="alts"> Moms
                 </label>
 
-                    <br>
+                    <br>    
              
                 <label>
                     <input type="checkbox"
+                            value="Fedex"
                             name="alts"> Fedex
                 </label>
 
                 <label>
                     <input type="checkbox"
+                            value="Lynden"
                             name="alts"> Lynden
                 </label>
                 
@@ -99,11 +107,13 @@
                 
                 <label>
                     <input type="checkbox"
+                            value="Space X"
                             name="alts"> Space X
                 </label>
 
                 <label>
                     <input type="checkbox"
+                            value="Carlile"
                             name="alts"> Carlile
                 </label>
 
@@ -111,8 +121,10 @@
 
                 <label>
                     <input type="checkbox"
+                            value="Other"
                             name="alts"> Other
                 </label>
+                
             </div>
 
             <!--css display: inline block to get rid of breaks for options?-->
@@ -121,26 +133,31 @@
                 
                 <label>
                     <input type="radio"
+                            value-="1"
                             name="satisfaction"> 1 (Bender "helped" you by taking your wallet)<br>
                 </label>
                 
                 <label>
                     <input type="radio"
+                            value="2"
                             name="satisfaction"> 2 (Zoidberg ate your sandwich...)<br>
                 </label>
                 
                 <label>
                     <input type="radio"
+                            value="3"
                             name="satisfaction"> 3 (Fry tried to help, but it didn't help)<br>
                 </label>
 
                 <label>
                     <input type="radio"
+                            value="4"
                             name="satisfaction"> 4 (Leela delivered your goods...while verbally judging you)<br>
                 </label>
 
                 <label>
                     <input type="radio"
+                            value="5"
                             name="satisfaction"> 5 (Hermes delivered your goods AND did your taxes)<br><br>
                 </label>
             </div>
