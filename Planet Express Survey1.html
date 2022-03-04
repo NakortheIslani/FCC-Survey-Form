@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+    <html language="en">
+        
+        <head>
+            <title>Planet Express</title>
+            <link rel="stylesheet" href="Planet Express styles1.css">
+        </head>
+    
+        <body class="body">
+        <header>
+            <div>
+                <h1>Planet Express Survey</h1>
+                <p>Let us know how we're doing!</p>
+            </div>
+        </header>
+        
+        <main>
+        <form class="form">
+            <div>
+                <label>Email address
+                    <input type="email" 
+                            placeholder="Enter your email"
+                            name="email"
+                            required>
+                </label>
+            </div>
+
+            <div>
+                <label>Name
+                    <input type="text"
+                            placeholder="Enter your name"
+                            name="name"
+                            required>
+                </label>
+            </div>
+        
+            <div>
+                <label>How old are you? <span>(optional)</span>
+                    <input type="number"
+                            placeholder="Age"
+                            name="age"
+                            min="10">
+                </label>
+            </div>
+
+            <div>
+                <lable>How long have you been using our services?<br>
+                    <input type="text"
+                            placeholder="e.g. 6 months"
+                            name="duration-of-use"
+                            required>
+                </lable>                       
+            </div>
+
+            <div>
+                <label>If there was one new feature you could suggest, <br> what would it be? <br>
+                    <input type="text"
+                            placeholder="e.g. Lobby Slurm machine?"
+                            name="new">
+                </label>
+            </div>
+
+            <div>
+                <label>
+                    How likely are you to recommend Planet Express to a friend?<br>
+                    <select name="recommendation" required>
+                        <option disable selected value>Select an option</option>
+                        <option value="Never">Never</option>
+                        <option value="Probably not">Probably not</option>
+                        <option value="Maybe">Maybe</option>
+                        <option value="Would">I think I would</option>
+                        <option value="Will">Definitly will</option>
+                    </select>
+                </label>
+            </div>
+
+            <div>
+                <p>Which alternatives did you consider before choosing <br> our services? 
+                    <span>(Choose all that apply)</span></p>
+                
+                <table class="justify-table">
+                    <tr>
+                        <td>
+                    <input type="checkbox"
+                            value="UPS"
+                            name="alts"> UPS 
+                        </td>
+                        <td>
+                    <input type="checkbox"
+                            value="Moms"
+                            name="alts"> Moms
+                        </td>
+                    </tr>      
+                    <tr>
+                        <td>        
+                    <input type="checkbox"
+                            value="Fedex"
+                            name="alts"> Fedex
+                        </td>
+                        <td>
+                    <input type="checkbox"
+                            value="Lynden"
+                            name="alts"> Lynden
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                    <input type="checkbox"
+                            value="Space X"
+                            name="alts"> Space X
+                        </td>
+                        <td>
+                    <input type="checkbox"
+                            value="Carlile"
+                            name="alts"> Carlile
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                    <input type="checkbox"
+                            value="Other"
+                            name="alts"> Other
+                        </td>
+                    </tr>
+                </label>
+                
+            </div>
+
+            <!--css display: inline block to get rid of breaks for options?-->
+            <div>
+                <p>On a scale of 1 to 5, how were you <br> treated by our staff?</p>
+                
+                <label>
+                    <input type="radio"
+                            value-="1"
+                            name="satisfaction"> 1 (Bender "helped" you by taking your wallet)<br>
+                </label>
+                
+                <label>
+                    <input type="radio"
+                            value="2"
+                            name="satisfaction"> 2 (Zoidberg ate your sandwich...)<br>
+                </label>
+                
+                <label>
+                    <input type="radio"
+                            value="3"
+                            name="satisfaction"> 3 (Fry tried to help, but it didn't help)<br>
+                </label>
+
+                <label>
+                    <input type="radio"
+                            value="4"
+                            name="satisfaction"> 4 (Leela delivered your goods...while verbally judging you)<br>
+                </label>
+
+                <label>
+                    <input type="radio"
+                            value="5"
+                            name="satisfaction"> 5 (Hermes delivered your goods AND did your taxes)<br><br>
+                </label>
+            </div>
+
+            <div>
+                <label>
+                    Tell us about your experience or leave a suggestion!<br>
+                    <textarea placeholder="...Wanna destroy all humans?"></textarea>
+                </label>
+            </div>
+
+            <div>
+                <input type="submit">
+            </div>    
+        
+        </form>
+
+        </main>
+    
+        <footer>
+
+        </footer>
+
+    </body>
+
+  </html>
