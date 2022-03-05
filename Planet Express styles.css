@@ -3,11 +3,26 @@
     text-align: center;
 }
 
-.justify-table {
-    align-self: left;
+.container {
+    width: 35%;
+    margin: 3.125rem auto 0 auto;  
 }
 
+.form-background {
+    background-color: #108769;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
 
+.selection-style {
+    display: block;
+    width: 70%;
+    margin: 0 auto 0 auto;
+}
+
+.form-group {
+    margin: 0 auto .75rem auto;
+}
 
 /*#70E3A2 ship oclor
 #F60100 red trim
