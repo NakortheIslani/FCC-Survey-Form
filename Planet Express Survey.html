@@ -7,53 +7,60 @@
         </head>
     
         <body class="body">
-        <header>
+
+        <div class="container">
+            <header>
             <div>
                 <h1>Planet Express Survey</h1>
                 <p>Let us know how we're doing!</p>
             </div>
         </header>
       
-        <form class="form">
-            <div>
-                <label>Email address
-                    <input type="email" 
+        <form class="form-background">
+            <div class="form-group">
+                <label>Email address<br>
+                    <input type="email"
+                            class="selection-style" 
                             placeholder="Enter your email"
                             name="email"
                             required>
                 </label>
             </div>
 
-            <div>
-                <label>Name
+            <div class="form-group">
+                <label>Name<br>
                     <input type="text"
+                            class="selection-style"
                             placeholder="Enter your name"
                             name="name"
                             required>
                 </label>
             </div>
         
-            <div>
-                <label>How old are you? <span>(optional)</span>
+            <div class="form-group">
+                <label>How old are you? <span>(optional)</span><br>
                     <input type="number"
+                            class="selection-style"
                             placeholder="Age"
                             name="age"
                             min="10">
                 </label>
             </div>
 
-            <div>
+            <div class="form-group">
                 <lable>How long have you been using our services?<br>
                     <input type="text"
+                            class="selection-style"
                             placeholder="e.g. 6 months"
                             name="duration-of-use"
                             required>
                 </lable>                       
             </div>
 
-            <div>
+            <div class="form-group">
                 <label>If there was one new feature you could suggest, <br> what would it be? <br>
                     <input type="text"
+                            class="selection-style"
                             placeholder="e.g. Lobby Slurm machine?"
                             name="new">
                 </label>
@@ -62,7 +69,7 @@
             <div>
                 <label>
                     How likely are you to recommend Planet Express to a friend?<br>
-                    <select name="recommendation" required>
+                    <select name="recommendation" required class="selection-style">
                         <option disable selected value>Select an option</option>
                         <option value="Never">Never</option>
                         <option value="Probably not">Probably not</option>
@@ -127,7 +134,6 @@
                 
             </div>
 
-            <!--css display: inline block to get rid of breaks for options?-->
             <div>
                 <p>On a scale of 1 to 5, how were you <br> treated by our staff?</p>
                 
@@ -162,17 +168,19 @@
                 </label>
             </div>
 
-            <div>
+            <div class="form-group">
                 <label>
                     Tell us about your experience or leave a suggestion!<br>
-                    <textarea placeholder="...Wanna destroy all humans?"></textarea>
+                    <textarea placeholder="...Wanna destroy all humans?"
+                                class="selection-style">  
+                    </textarea>
                 </label>
             </div>
 
             <div>
                 <input type="submit">
             </div>
-        
+        </div>
             
         
         </form>
