@@ -1,28 +1,40 @@
-.body {
+.body { 
+    background-image: url("https://www.wallpaperflare.com/static/763/108/1014/futurama-minimalism-planet-express-wallpaper.jpg");
     background-color: #70E3A2;
     text-align: center;
 }
 
-.container {
-    width: 35%;
-    margin: 3.125rem auto 0 auto;  
-}
 
-.form-background {
-    background-color: #108769;
+.form-layout {
+    background-color: #70E3A2;
     padding-top: 1rem;
     padding-bottom: 1rem;
+    opacity: 90%;
 }
 
 .selection-style {
     display: block;
-    width: 70%;
-    margin: 0 auto 0 auto;
+    width: 90%;
+    margin: 0 auto 2rem auto;
 }
 
-.form-group {
-    margin: 0 auto .75rem auto;
+label {
+    
 }
+
+.form-inputs {
+    margin: 0.75rem auto .75rem auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.container {
+    width: 45%;
+    margin: 3.125rem auto 0 auto;
+    padding: 0 1rem 0 1rem;
+}
+
+@media 
 
 /*#70E3A2 ship oclor
 #F60100 red trim
