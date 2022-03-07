@@ -1,25 +1,38 @@
+h1, p, label {
+    color: #9400f6;  
+    padding: 
+}
+
+.heading {
+    background-color: rgba(22, 45, 27, 0.9);
+    border-radius: 15px;
+    width: fit-content;
+    padding: 0 1% 0 1%;
+    margin: 0 auto 0 auto;
+}
+
 .body { 
-    background-image: url("https://www.wallpaperflare.com/static/763/108/1014/futurama-minimalism-planet-express-wallpaper.jpg");
-    background-color: #70E3A2;
+    background-image: url("https://i.imgur.com/GIQYelf.jpg?2");
+    background-color: #108769;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center 35%;
+    background-attachment: fixed;
     text-align: center;
 }
 
 
 .form-layout {
-    background-color: #70E3A2;
+    background-color: rgba(22, 45, 27, 0.9);
+    border-radius: 15px;
     padding-top: 1rem;
     padding-bottom: 1rem;
-    opacity: 90%;
 }
 
 .selection-style {
     display: block;
-    width: 90%;
+    width: 65%;
     margin: 0 auto 2rem auto;
-}
-
-label {
-    
 }
 
 .form-inputs {
