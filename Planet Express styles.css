@@ -1,11 +1,12 @@
-h1, p, label {
-    color: #9400f6;  
-    padding: 
+h1, h3, p, label {
+    color: #2fc46d; 
+    font-family: impact, fantasy, serif;
+    letter-spacing: 1.5px; 
 }
 
 .heading {
     background-color: rgba(22, 45, 27, 0.9);
-    border-radius: 15px;
+    border-radius: 10px;
     width: fit-content;
     padding: 0 1% 0 1%;
     margin: 0 auto 0 auto;
@@ -47,8 +48,5 @@ h1, p, label {
     padding: 0 1rem 0 1rem;
 }
 
-@media 
 
-/*#70E3A2 ship oclor
-#F60100 red trim
-#108769 darker teal*/
+
