@@ -4,6 +4,10 @@ h1, h3, p, label {
     letter-spacing: 1.5px; 
 }
 
+span {
+    font-size: .75rem;
+}
+
 .heading {
     background-color: rgba(22, 45, 27, 0.9);
     border-radius: 10px;
@@ -43,10 +47,10 @@ h1, h3, p, label {
 }
 
 .container {
-    width: 45%;
+    width: 50%;
     margin: 3.125rem auto 0 auto;
     padding: 0 1rem 0 1rem;
+    min-width: 400px;
 }
-
 
 
