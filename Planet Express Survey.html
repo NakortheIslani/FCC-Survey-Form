@@ -11,40 +11,44 @@
             <div class="container">
                 <header>
                     <div class="heading">
-                        <h1>Planet Express Survey</h1>
-                        <h3>Let us know how we're doing!</h3>
+                        <h1 id="title">Planet Express Survey</h1>
+                        <p id="description">Let us know how we're doing!</p>
                     </div>
                 </header>
                 
                 <main>
-                    <form class="form-layout">
+                    <form class="form-layout" id="survey-form">
                         <div class="form-inputs">
-                            <label>Email address<br>
+                            <label id="email-label">Email address<br>
                                 <input type="email"
                                         class="selection-style" 
                                         placeholder="Enter your email"
                                         name="email"
-                                        required>
+                                        required
+                                        id="email">
                             </label>
                         </div>
 
                         <div class="form-inputs">
-                            <label>Name<br>
+                            <label id="name-label">Name<br>
                                 <input type="text"
                                         class="selection-style"
                                         placeholder="Enter your name"
                                         name="name"
-                                        required>
+                                        required
+                                        id="name">
                             </label>
                         </div>
                     
                         <div class="form-inputs">
-                            <label>How old are you? <span>(optional)</span><br>
+                            <label id="number label">How old are you? <span>(optional)</span><br>
                                 <input type="number"
                                         class="selection-style"
                                         placeholder="Age"
                                         name="age"
-                                        min="10">
+                                        min="10"
+                                        max="999"
+                                        id="number">
                             </label>
                         </div>
 
@@ -70,7 +74,7 @@
                         <div class="form-inputs">
                             <label>
                                 How likely are you to recommend Planet Express to a friend?<br>
-                                <select name="recommendation" required class="selection-style">
+                                <select id="dropdown" name="recommendation" required class="selection-style">
                                     <option disable selected value>Select an option</option>
                                     <option value="Never">Never</option>
                                     <option value="Probably not">Probably not</option>
@@ -182,7 +186,7 @@
                         </div>
 
                         <div>
-                            <input type="submit">
+                            <input type="submit" id="submit">
                         </div>              
                     </form>
                 </main>
